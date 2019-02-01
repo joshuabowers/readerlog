@@ -1,0 +1,28 @@
+{
+  "name": "readerlog",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "normalizr": "^3.3.0",
+    "prop-types": "^15.6.2",
+    "re-reselect": "^2.3.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-paginate": "^6.2.1",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-transition-group": "^2.5.3",
+    "redux": "^4.0.1",
+    "redux-act": "^1.7.4",
+    "redux-cablecar": "^3.0.4",
+    "redux-logger": "^3.0.6",
+    "reselect": "^4.0.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}
