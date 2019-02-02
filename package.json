@@ -2,10 +2,13 @@
   "name": "readerlog",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@rails/webpacker": "^4.0.0-rc.7",
+    "babel-loader": "^8.0.5",
     "normalizr": "^3.3.0",
+    "postcss-cssnext": "^3.1.0",
     "prop-types": "^15.6.2",
     "re-reselect": "^2.3.0",
     "react": "^16.7.0",
@@ -23,6 +26,7 @@
     "webpack-merge": "^4.2.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "3.1.14"
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   }
 }
