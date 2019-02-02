@@ -58,6 +58,17 @@
 4. **Lifecycle**: a set of sessions, start and end dates, reading stats for that licecycle.
 5. **Session**: Describes a duration of time and number of pages read of a given book. Belongs to a Lifecycle. _Note: This will likely need to be renamed something else, to avoid either a reserved name clash in Rails, or to avoid a clash with the obvious name for when a User is logged in._
 
+## Components
+
+1. **Library**
+2. **Header**
+    1. **LoggedInHeader**
+    2. **LoggedOutHeader**
+3. **Book**
+    1. **BookTile**
+    2. **BookDetail**
+4. **SearchBar**
+
 ## Technology
 
 ### Backend

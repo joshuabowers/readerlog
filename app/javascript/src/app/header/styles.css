@@ -1,0 +1,8 @@
+header {
+  margin-top: 1vh;
+  background: linear-gradient(
+    to bottom right,
+    hsl( 120, 50%, 75% ),
+    hsl( 120, 50%, 40% )
+  );
+}

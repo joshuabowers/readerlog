@@ -8,9 +8,13 @@
           "browsers": "> 1%",
         },
         "useBuiltIns": "usage",
-        "forceAllTransforms": true
+        "forceAllTransforms": true,
+        "shippedProposals": true
       }
     ],
     "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread"
   ]
 }

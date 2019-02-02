@@ -2,14 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-import logger from 'redux-logger';
+import { createLogger } from 'redux-logger';
+import { loggers } from 'redux-act';
 
 import { createStore, applyMiddleware } from 'redux';
 
-import App from './app'
+import App, { rootReducer } from './app'
 import Styles from './styles.css';
 
-const rootReducer = (state, action) => ({});
+const logger = createLogger({
+  ...loggers.reduxLogger
+});
 
 const middleware = applyMiddleware( logger );
 const store = createStore( rootReducer, middleware );
