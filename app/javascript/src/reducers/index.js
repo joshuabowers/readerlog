@@ -1,5 +1,5 @@
 import { createAction, createReducer } from 'redux-act';
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
 
 export const actions = {
   logIn: createAction('Log into the site'),
@@ -7,8 +7,8 @@ export const actions = {
 };
 
 const isLoggedIn = createReducer({
-  [actions.logIn]: true,
-  [actions.logOut]: false
+  [actions.logIn]: (state) => true,
+  [actions.logOut]: (state) => false
 }, false);
 
 export default combineReducers({ isLoggedIn });
