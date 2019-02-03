@@ -1,9 +1,9 @@
 import React from 'react';
 
-const LoggedOutHeaderComponent = props => (
+const LoggedOutHeaderComponent = ({ handleLogIn }) => (
   <aside>
     <ul>
-      <li>Log in</li>
+      <li><button onClick={ handleLogIn }>Log in</button></li>
       <li>Sign up</li>
     </ul>
   </aside>

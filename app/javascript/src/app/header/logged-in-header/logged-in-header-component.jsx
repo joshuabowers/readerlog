@@ -1,11 +1,11 @@
 import React from 'react';
 
-const LoggedInHeaderComponent = props => (
+const LoggedInHeaderComponent = ({ username, handleLogOut }) => (
   <aside>
     <ul>
-      <li>Username</li>
+      <li>{ username }</li>
       <li>Search</li>
-      <li>Log out</li>
+      <li><button onClick={ handleLogOut }>Log out</button></li>
     </ul>
   </aside>
 );

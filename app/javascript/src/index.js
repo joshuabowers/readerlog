@@ -7,8 +7,9 @@ import { loggers } from 'redux-act';
 
 import { createStore, applyMiddleware } from 'redux';
 
-import App, { rootReducer } from './app'
+import App from './app'
 import Styles from './styles.css';
+import rootReducer from './reducers';
 
 const logger = createLogger({
   ...loggers.reduxLogger
