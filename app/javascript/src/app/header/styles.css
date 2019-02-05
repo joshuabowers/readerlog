@@ -1,5 +1,6 @@
 header {
   margin-top: 1vh;
+  margin-bottom: 2vh;
   background: linear-gradient(
     to bottom right,
     hsl( 120, 50%, 75% ),
@@ -9,6 +10,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 0.25em 1rem #444;
 }
 
 header h1 {
