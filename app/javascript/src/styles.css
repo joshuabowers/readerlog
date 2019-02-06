@@ -13,7 +13,7 @@ body {
     to bottom right,
     hsl(31, 34%, 59%),
     hsl(31, 34%, 24%)
-  );
+  ) no-repeat fixed;
   color: white;
   font-family: sans-serif;
 }
