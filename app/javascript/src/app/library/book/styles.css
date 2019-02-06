@@ -1,9 +1,18 @@
 .book {
   position: relative;
 
-  width: 200px;
-
   box-shadow: 2px 2px 5px #444;
+}
+
+.book.details {
+  grid-column-end: span 3;
+  grid-row-end: span 2;
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
 
 .book .title {
