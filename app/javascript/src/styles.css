@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  min-height: calc(100% - 1vh);
+  min-height: calc(100% - 3vh);
   background: linear-gradient(
     to bottom right,
     hsl(31, 34%, 59%),
