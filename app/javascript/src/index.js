@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 import { loggers } from 'redux-act';
 
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 
 import App from './app'
 import Styles from './styles.css';
@@ -15,8 +15,14 @@ const logger = createLogger({
   ...loggers.reduxLogger
 });
 
-const middleware = applyMiddleware( logger );
-const store = createStore( rootReducer, middleware );
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const middleware = composeEnhancers(
+  applyMiddleware( logger )
+);
+
+const store = createStore(
+  rootReducer, middleware
+);
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
