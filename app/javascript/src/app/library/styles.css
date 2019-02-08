@@ -1,5 +1,6 @@
 .library {
   margin: 1em;
+  margin-bottom: 3em;
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax( 150px, 1fr ) );
   grid-template-rows: 1fr;

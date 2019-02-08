@@ -51,14 +51,15 @@
 #searchBar label {
   display: flex;
   flex: none;
-  align-items: baseline;
+  align-items: center;
 }
 
 #searchBar input {
   flex: auto;
   margin-left: 1em;
   border: 0;
-  font-size: 20px;
+  border-radius: 3px;
+  font-size: 18px;
   padding: 0.1em;
 
   color: white;
