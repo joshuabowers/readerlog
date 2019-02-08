@@ -17,6 +17,10 @@
   color: var(--material-hover-color);
 }
 
+.material:focus {
+  outline: 0;
+}
+
 .material:disabled {
   opacity: 0.75;
   cursor: not-allowed;
