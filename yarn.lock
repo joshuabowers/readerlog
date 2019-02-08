@@ -3262,6 +3262,11 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
+hint.css@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/hint.css/-/hint.css-2.5.1.tgz#b0924714c6052a2a0256417162358a3dea140692"
+  integrity sha512-6ks/IZ6sz7l0ySHlMi9wy24uLiwF00fiHm6tZekfoA8NBD67F8OlYDpXnTcpfnoVvBaJtC0bIIwv5/GHWXLl/g==
+
 history@^4.7.2:
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"

@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import AppComponent from './app-component';
 
 const mapState = state => ({
-  isLoggedIn: state.isLoggedIn
+  isLoggedIn: state.app.isLoggedIn
 });
 
 const mapDispatch = dispatch => ({

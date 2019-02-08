@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import LoggedInHeaderComponent from './logged-in-header-component';
-import { actions } from 'reducers';
+import { actions } from 'reducers/app';
 
 const mapStateToProps = state => (
   {
@@ -10,6 +10,10 @@ const mapStateToProps = state => (
 
 const mapDispatchToProps = dispatch => (
   {
+    toggleSearchBar: () => {
+      dispatch( actions.toggleSearchBar() );
+    },
+
     handleLogOut: () => {
       dispatch( actions.logOut() );
     }

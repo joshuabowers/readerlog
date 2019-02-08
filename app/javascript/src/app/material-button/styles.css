@@ -1,0 +1,29 @@
+.material {
+  --material-icon-hover-color: gold;
+
+  color: white;
+  background-color: transparent;
+
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  font-size: 30px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.material:hover {
+  color: var(--material-icon-hover-color);
+}
+
+.material:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.material:disabled:hover {
+  color: inherit;
+}
