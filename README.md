@@ -49,6 +49,12 @@
         3. **Search button**: clicking toggles a search box, fixed under the site header. Search box defaults to hidden, unless the user has no books in their library. Search button is hidden if looking at account information. Search box docks right-hand side of the header.
         4. **Breadcrumb** bar: fixed, docks left-hand side of the header. Hidden if at top level. Otherwise, animates in, shows a separated list of locations leading back up to top.
     2. App presents the user with a unified library grid view: this contains a searched and sorted list of books of interest to the user. Search will collate both the user's library and an API search of books which match the user's query. Any _current reads_ books which match the current search query will be filtered to the top of the list. Books would be grouped together by sort method. (In the case of _current reads_, those would be grouped under **Current**, and sorted to the top of the groups.) Group headers would sticky under site header. If a search query has not been entered, no API search is performed, and the results will only be from the user's library. _Note: Abandoned books sort into the broader library, and not into **Current**._
+4. When a user signs up, there should exist a wizard to walk them through book discovery. This should help them get books into their library, as well as orient them through using the app after the sign up is complete.
+    1. Multi-stage wizard:
+        1. **email / password**. Do we want user names? Real name info? Email sufficient? Does the site provide social interaction? If so, abstracting emails would be desirable.
+        2. **Favorite Genre**: to give some idea of the types of books users can discover.
+        3. **Favorite Author**
+        4. **Favorite Book**
 
 ## Models
 
