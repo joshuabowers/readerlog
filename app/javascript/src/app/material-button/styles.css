@@ -1,6 +1,4 @@
 .material {
-  --material-icon-hover-color: gold;
-
   color: white;
   background-color: transparent;
 
@@ -16,7 +14,7 @@
 }
 
 .material:hover {
-  color: var(--material-icon-hover-color);
+  color: var(--material-hover-color);
 }
 
 .material:disabled {
