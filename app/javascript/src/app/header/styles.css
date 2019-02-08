@@ -3,7 +3,6 @@ header {
   position: sticky;
   top: 0px;
   margin-top: 3vh;
-  margin-bottom: 2vh;
   background: linear-gradient(
     to bottom right,
     hsl( 120, 50%, 75% ),

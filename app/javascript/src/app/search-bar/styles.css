@@ -4,8 +4,8 @@
   position: sticky;
 
   width: 50%;
+  margin: 0;
   margin-left: 25%;
-  margin-top: -0.75em;
   padding: 1em;
 
   border-bottom-left-radius: 0.3em;
@@ -17,9 +17,18 @@
     hsl( 190, 50%, 40% )
   );
 
-  top: 0;
+  top: 3em;
 
   box-shadow: 0 5px 10px var(--drop-shadow-dark-color);
+
+  transition: all 0.3s ease-in-out;
+}
+
+#searchBar.hidden {
+  transform: translateY(-4em);
+  opacity: 0;
+  top: 0;
+  margin-bottom: -3em;
 }
 
 #searchBar::after {
@@ -48,4 +57,10 @@
 #searchBar input {
   flex: auto;
   margin-left: 1em;
+  border: 0;
+  font-size: 20px;
+  padding: 0.1em;
+
+  color: white;
+  background-color: rgba(32,32,32, 0.5);
 }

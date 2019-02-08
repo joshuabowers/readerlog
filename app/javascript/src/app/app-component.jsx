@@ -6,21 +6,23 @@ import SearchBar from './search-bar';
 import Library from './library';
 import Welcome from './welcome';
 
-const App = ({ isLoggedIn, searchBarVisible, ...props }) => (
-  <main>
+const App = ({ isLoggedIn, ...props }) => (
+  <div id='app'>
     <Header />
-    { searchBarVisible && <SearchBar /> }
-    {
-      !isLoggedIn
-        ? <Welcome />
-        : <Router>
-            <div>
-              <Route exact path='/' component={ Library } />
-              <Route path='/library' component={ Library } />
-            </div>
-          </Router>
-    }
-  </main>
+    <main>
+      <SearchBar />
+      {
+        !isLoggedIn
+          ? <Welcome />
+          : <Router>
+              <div>
+                <Route exact path='/' component={ Library } />
+                <Route path='/library' component={ Library } />
+              </div>
+            </Router>
+      }
+    </main>
+  </div>
 );
 
 export default App;
