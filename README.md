@@ -61,8 +61,9 @@
 1. **User**: has a library and server sessions.
 2. **Library**: has a set of books, (along with views on those books: **current_reads**, **available**, **wishlist**), and aggregate reading stats.
 3. **Book**: has a set of lifecycles, reading stats for that book, cover image url, title, authors array, genre, status (**unread**, **wishlist**, **read**, **abandoned**).
-4. **Lifecycle**: a set of sessions, start and end dates, reading stats for that licecycle.
+4. **Lifecycle**: a set of sessions, start and end dates, reading stats for that lifecycle.
 5. **Session**: Describes a duration of time and number of pages read of a given book. Belongs to a Lifecycle. _Note: This will likely need to be renamed something else, to avoid either a reserved name clash in Rails, or to avoid a clash with the obvious name for when a User is logged in._
+    - _Addendum: looking back at code for the predecessor app which inspired this, **Session**, as defined here, was referred to at **Event**, which makes just as much sense as anything. So, they'll be called **Event**._
 
 ## Components
 
