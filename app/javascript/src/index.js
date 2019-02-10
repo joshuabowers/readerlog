@@ -10,6 +10,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import App from './app'
 import Styles from './styles.css';
 import rootReducer from './reducers';
+import sagaMiddleware, { rootSaga } from './sagas';
 
 const logger = createLogger({
   ...loggers.reduxLogger
@@ -17,12 +18,14 @@ const logger = createLogger({
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const middleware = composeEnhancers(
-  applyMiddleware( logger )
+  applyMiddleware( logger, sagaMiddleware )
 );
 
 const store = createStore(
   rootReducer, middleware
 );
+
+sagaMiddleware.run( rootSaga );
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
