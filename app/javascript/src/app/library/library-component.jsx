@@ -8,18 +8,18 @@ const LibraryComponent = ({ library, ...props }) => (
     Object.entries( library ).map(
       ( [groupName, books] ) => (
         [
-          <div key={ groupName } className={ styles.groupName }>
-            <h2>
-              <span>{ groupName }</span>
-            </h2>
-          </div>,
+          <section key={ groupName } className={ styles.groupName }>
+            <div>
+              <h2>{ groupName }</h2>
+            </div>
+          </section>,
           books.map(
             book => <Book key={ book.id } id={ book.id }
                           title={ book.title } coverUrl={ book.coverUrl }/>
           )
         ]
       )
-    ).flat()
+    )
   }
   </div>
 );
