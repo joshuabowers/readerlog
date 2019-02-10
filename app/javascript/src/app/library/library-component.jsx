@@ -7,17 +7,17 @@ const LibraryComponent = ({ library, ...props }) => (
   {
     Object.entries( library ).map(
       ( [groupName, books] ) => (
-        [
-          <section key={ groupName } className={ styles.groupName }>
-            <div>
-              <h2>{ groupName }</h2>
-            </div>
-          </section>,
-          books.map(
-            book => <Book key={ book.id } id={ book.id }
-                          title={ book.title } coverUrl={ book.coverUrl }/>
-          )
-        ]
+        <section key={ groupName } className={ styles.groupedBooks }>
+          <h2 className={ styles.groupName }>{ groupName }</h2>
+          <div className={ styles.books }>
+          {
+            books.map(
+              book => <Book key={ book.id } id={ book.id }
+                            title={ book.title } coverUrl={ book.coverUrl }/>
+            )
+          }
+          </div>
+        </section>
       )
     )
   }

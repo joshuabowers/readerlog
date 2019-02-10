@@ -1,8 +1,53 @@
 .library {
   margin: 1em;
   margin-bottom: 3em;
+}
+
+.groupName {
+  position: sticky;
+  top: 2em;
+  z-index: 3;
+
+  background: linear-gradient(
+    to bottom right,
+    hsl( 0, 50%, 75% ),
+    hsl( 0, 50%, 40% )
+  );
+
+  width: 2em;
+  height: 1em;
+
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  box-shadow: 0px 5px 10px var(--drop-shadow-light-color);
+
+  margin: 0;
+  margin-left: -1em;
+  padding: 0.5em;
+
+  text-align: center;
+}
+
+.groupName::after {
+  z-index: 1;
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+  height: calc( 100% - 0.4em - 2px );
+  width: 100%;
+
+  content: ' ';
+  border: 2px dashed hsl( 0, 75%, 80% );
+  border-left: 0;
+  border-right: 0;
+
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.books {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax( 150px, 1fr ) );
+  grid-template-columns: repeat( auto-fill, minmax( 150px, 1fr ) );
   grid-template-rows: 1fr;
   grid-gap: 1.25em;
 
@@ -12,31 +57,6 @@
   max-width: 100%;
   min-height: 100%;
   box-sizing: border-box;
-}
 
-.groupName {
-  grid-column: 1 / -1;
-
-  position: sticky;
-  top: 2.75em;
-  z-index: 3;
-}
-
-.groupName h2 {
-
-  background: linear-gradient(
-    to bottom right,
-    hsl( 0, 50%, 75% ),
-    hsl( 0, 50%, 40% )
-  );
-
-  width: 1em;
-  height: 1em;
-
-  box-shadow: 0px 5px 10px var(--drop-shadow-light-color);
-
-  margin: 0;
-  padding: 0.5em;
-
-  text-align: center;
+  margin: 1em 0;
 }
