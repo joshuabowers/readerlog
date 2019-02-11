@@ -37,7 +37,7 @@
   width: 100%;
 
   content: ' ';
-  border: 2px dashed hsl( 0, 75%, 80% );
+  border: 2px dashed hsla( 0, 75%, 80%, 75% );
   border-left: 0;
   border-right: 0;
 

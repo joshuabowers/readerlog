@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.12'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -68,7 +68,9 @@ group :development do
   gem 'foreman'
 end
 
-gem 'mongoid', '~> 7.0.1'
+gem 'mongoid', '~> 7.0.2'
 gem 'devise', '~> 4.5.0'
 gem 'rolify', '~> 5.2.0'
 gem 'pundit', '~> 2.0.1'
+
+gem 'jwt', '~> 2.1.0'
