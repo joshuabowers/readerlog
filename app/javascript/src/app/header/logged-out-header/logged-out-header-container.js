@@ -11,7 +11,7 @@ const mapStateToProps = state => (
 const mapDispatchToProps = dispatch => (
   {
     handleLogIn: () => {
-      dispatch( actions.logIn() );
+      dispatch( actions.toggleLogIn() );
     }
   }
 );

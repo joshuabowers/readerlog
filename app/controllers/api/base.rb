@@ -7,7 +7,7 @@ module API
 
     def authenticate_request
       @current_user = User.authorize( request.headers )
-    rescue e
+    rescue StandardError => e
       render json: { error: 'Not Authorized' }, status: 401
     end
   end

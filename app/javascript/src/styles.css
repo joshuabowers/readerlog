@@ -3,6 +3,8 @@
   --drop-shadow-dark-color: rgba( 0,0,0, 0.75 );
 
   --material-hover-color: gold;
+
+  --gradient-direction: to bottom right;
 }
 
 html, body {
