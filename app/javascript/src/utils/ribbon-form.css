@@ -1,0 +1,13 @@
+.ribbon-form {
+
+}
+
+.ribbon-form input {
+  border: 0;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 0.1em;
+
+  color: white;
+  background-color: rgba(32,32,32, 0.5);
+}
