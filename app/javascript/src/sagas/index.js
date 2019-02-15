@@ -2,6 +2,7 @@ import createSagaMiddleware from 'redux-saga';
 import { put, all } from 'redux-saga/effects'
 import { actions } from 'reducers/library';
 import randomSentence from 'random-sentence';
+import userPresence from './userPresence';
 
 export function* helloSaga() {
   console.log( 'Running rootSaga!' );
@@ -22,7 +23,8 @@ export function* createBookPlaceholders() {
 export function* rootSaga() {
   yield all([
     helloSaga(),
-    createBookPlaceholders()
+    createBookPlaceholders(),
+    userPresence()
   ]);
 }
 

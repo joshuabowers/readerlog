@@ -1,5 +1,7 @@
 module API
   class Base < ActionController::API
+    include ::ActionController::Cookies
+    
     before_action :authenticate_request
     attr_reader :current_user
 

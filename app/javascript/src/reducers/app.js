@@ -7,6 +7,9 @@ export const actions = {
   logIn: createAction('Log into the site'),
   logOut: createAction('Log out of the site'),
 
+  logInSuccess: createAction('Log in succeeded'),
+  logInFailure: createAction('Log in failed'),
+
   toggleSearchBar: createAction('Shows or hides the search bar'),
   search: createAction('Perform a book search'),
   searchSuccess: createAction('A search succeeded'),
@@ -14,7 +17,8 @@ export const actions = {
 };
 
 const isLoggedIn = createReducer({
-  [actions.logIn]: (state) => false,
+  [actions.logInSuccess]: (state) => true,
+  [actions.logInFailure] : (state) => false,
   [actions.logOut]: (state) => false
 }, false);
 

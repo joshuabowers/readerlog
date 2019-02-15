@@ -2,19 +2,21 @@ import React from 'react';
 import MaterialButton from 'app/material-button';
 import styles from './styles';
 
-const LogInComponent = ({ isVisible, ...props }) => (
-  <section className={[
+const LogInComponent = ({ isVisible, handleSubmit, ...props }) => (
+  <form className={[
     styles.logIn,
     isVisible ? undefined : styles.hidden
-  ].join(' ') }>
+  ].join(' ') } onSubmit={ handleSubmit }>
     <label htmlFor='login-email'>Email</label>
-    <input type='email' id='login-email' />
+    <input type='email' name='email' id='login-email' />
     <label htmlFor='login-password'>Password</label>
-    <input type='password' id='login-password' />
+    <input type='password' name='password' id='login-password' />
     <div className={ styles.actions }>
-      <MaterialButton icon='open_in_browser' label='Submit credentials'/>
+      <MaterialButton icon='open_in_browser'
+                      label='Submit credentials'
+                      type='submit'/>
     </div>
-  </section>
+  </form>
 );
 
 export default LogInComponent;
