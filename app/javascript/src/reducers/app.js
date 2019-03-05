@@ -22,6 +22,12 @@ const isLoggedIn = createReducer({
   [actions.logOut]: (state) => false
 }, false);
 
+const loginError = createReducer({
+  [actions.logInSuccess]: (state) => null,
+  [actions.logInFailure]: (state, { error }) => error,
+  [actions.logOut]: (state) => null
+}, null);
+
 const isLogInVisible = createReducer({
   [actions.toggleLogIn]: (state) => !state,
   [actions.logOut]: (state) => true
@@ -36,7 +42,7 @@ const query = createReducer({
   [actions.search]: (state, payload) => payload
 }, '');
 
-const logIn = combineReducers({ isVisible: isLogInVisible })
+const logIn = combineReducers({ isVisible: isLogInVisible, error: loginError })
 const search = combineReducers({ isVisible, query });
 
 export default combineReducers({ isLoggedIn, logIn, search });

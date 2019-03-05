@@ -14,7 +14,7 @@ const MaterialButtonComponent = ({ icon, label, ...props }) => {
     <button className={ classes } aria-label={ label } {...props}>
       { icon }
     </button>
-  )
+  );
 }
 
 export default MaterialButtonComponent;

@@ -10,7 +10,7 @@ export function * authorize( formData ) {
       const user = yield response.json();
       yield put( actions.logInSuccess( name ) );
     } else {
-      throw response;
+      throw yield response.json();
     }
   } catch( error ){
     yield put( actions.logInFailure( error ) );
