@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import LogInComponent from './log-in-component';
-import { actions } from 'reducers/app';
+import { actions } from 'reducers/app/log-in';
 
 const mapState = state => ({
-  isVisible: !state.app.isLoggedIn && state.app.logIn.isVisible
+  isVisible: !state.app.logIn.userPresent && state.app.logIn.isVisible
 });
 
 const mapDispatch = dispatch => ({

@@ -3,7 +3,7 @@ import HeaderComponent from './header-component';
 
 const mapStateToProps = state => (
   {
-    isLoggedIn: state.app.isLoggedIn
+    isLoggedIn: state.app.logIn.userPresent
   }
 );
 

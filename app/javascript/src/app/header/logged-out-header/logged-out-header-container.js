@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import LoggedOutHeaderComponent from './logged-out-header-component';
-import { actions } from 'reducers/app';
+import { actions } from 'reducers/app/log-in';
 
 const mapStateToProps = state => (
   {

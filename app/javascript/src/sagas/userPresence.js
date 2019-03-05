@@ -1,6 +1,6 @@
 import { take, put, call, fork } from 'redux-saga/effects';
 import API from 'utils/restAPI';
-import { actions } from 'reducers/app';
+import { actions } from 'reducers/app/log-in';
 
 export function * authorize( formData ) {
   try {

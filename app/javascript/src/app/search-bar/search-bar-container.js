@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import SearchBarComponent from './search-bar-component';
-import { actions } from 'reducers/app';
+import { actions } from 'reducers/app/search';
 
 const mapState = state => ({
   query: state.app.search.query,
