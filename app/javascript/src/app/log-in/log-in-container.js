@@ -3,7 +3,8 @@ import LogInComponent from './log-in-component';
 import { actions } from 'reducers/app/log-in';
 
 const mapState = state => ({
-  isVisible: !state.app.logIn.userPresent && state.app.logIn.isVisible
+  isVisible: !state.app.logIn.userPresent && state.app.logIn.isVisible,
+  error: state.app.logIn.error
 });
 
 const mapDispatch = dispatch => ({

@@ -55,3 +55,7 @@
 .logIn button {
   font-size: 40px;
 }
+
+.logIn menu {
+  margin: 0;
+}
